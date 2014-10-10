@@ -1,0 +1,59 @@
+body{
+    background: url(../img/cityscape.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 1000px;
+}
+
+.container_main{
+    border: 5px;
+    float: left;
+    width: 70%;
+}
+
+.container_aside{
+    float: right;
+    width: 30%;
+}
+
+div#slideshow{
+    width: 600px; /*cannot write media queries here no support for IE8*/
+    height: 330px;
+    padding: 5px;
+}
+div#sliderCaption{
+    padding: 5px;
+    display: inline-block;
+    width: 660px; 
+}
+
+img.slider{
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+#sliderCaption img{
+    width: 159px;
+}
+#slideshow img{
+    height: 330px;
+    width: 660px;
+}
+
+img.active{
+    display: block;
+    border: 5px solid black;
+}
+
+.search{
+    width: 274px;
+    position:relative;  
+    padding:6px;
+    background: white url(../img/search.png) right no-repeat;
+}
+.tweet{
+    width: 274px;
+}
