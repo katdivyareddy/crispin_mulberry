@@ -1,44 +1,75 @@
 body{
-    background: url(../img/cityscape.jpg);
-    background-size: 100%;
+    background: url(../img/cityscape.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family: Helvetica;
-    color: #ffffff;
+    color: #fff;
     margin: 10px;
 }
-.container{
+
+.header{
     margin: auto;
     width: 1000px;
-    height: 132px;
+    height: 100px;
 }
 
-.container .navbar{
-    display: inline-block;
-    height: 40px;
+.container1{
+    margin: auto;
     width: 1000px;
-    background: url(../img/navbar.png);
 }
 
-.container .navbar ul{
+.container1 .navbar{
+    width: 1000px;
+}
+
+.navbar ul{
+    padding: 0px;
     margin: 0px;
+    background: #EAEAEA;
+    border-bottom: 1px solid grey;
+}
+.navbar ul li{
+    width: 16.2%;
+    padding: 10px 0px;
+    text-align: center;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    cursor: pointer;
+    cursor: hand;
+}
+.navbar ul li a{
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(40, 43, 46, 0.8);
 }
 
-.container .navbar ul li{
-    display: inline;
+.navbar ul li:hover{
+    background: #D3D3D3;
 }
 
-.container_main, .logo{
+.navbar ul li.active{
+    background: #FFF;
+    margin-top: -10px;
+    margin-bottom: -2px;
+    border: 2px solid grey;
+    border-bottom: 2px solid #FFF;
+}
+
+.container1_main, .logo{
     border: 5px;
     float: left;
     width: 70%;
 }
 
-.container_aside, .search-top{
+.container1_aside, .search-top{
     float: right;
     width: 30%;
 }
 
-.container_main, .container_aside{
+.container1_main, .container1_aside{
+    padding-top: 10px;
     background: white;
 }
 
@@ -49,8 +80,10 @@ div#slideshow{
 }
 
 div#sliderCaption{
-    margin: 0px 20px;
+    margin: 0px 20px 5px;
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     width: 666px; /*cannot write media queries here no support for IE8*/
 }
 
@@ -78,6 +111,7 @@ div#sliderCaption{
 
 span.slider{
     position: absolute;
+    overflow: hidden;
     width: 660px;
     display: none;
 }
@@ -105,6 +139,8 @@ span.slider p a{
 
 span.active{
     display: block;
+    min-height: 20px;
+    overflow: hidden;
 }
 
 .actThumb .thumb{
@@ -132,6 +168,19 @@ span.active{
     font-size: 13px;
     text-decoration: none;
     padding-left: 0.8em;
+}
+
+.container1_aside .ads{
+    margin: 0px
+}
+
+.container1_aside .ads img{
+    margin: 10px 0px;
+}
+
+hr{
+    width: 960px;
+    margin: auto;
 }
 
 .tweet{
