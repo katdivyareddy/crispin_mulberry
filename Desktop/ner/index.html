@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Nerdery Sample</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/styling.css">
 	<script type="text/javascript" src="resources/js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 	<div class="container">
-		<div class="container_main">
-			<div>
+		<div class="logo">
+			<div class="headers">
 				<img src="resources/img/logo.png">
 			</div>
+		</div>
+		<div class="search-top">
+			<div>
+				<input class="search" type="text" placeholder="Search . . . . " />
+				<a href="#">My Account | </a>
+				<a href="#">My Subscriptions | </a>
+				<a href="#">My Articles </a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="navbar">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="container_main">
 			<div id="slideshow">
-			    <img id="img1" class="slider active" src="resources/img/1.JPG" />
-			    <img id="img2" class="slider" src="resources/img/2.JPG" />
-			    <img id="img3" class="slider" src="resources/img/3.JPG" />
-			    <img id="img4" class="slider" src="resources/img/4.JPG" />
+			    <span class="slider active">
+			    	<img id="img1" src="resources/img/1.JPG" />
+			    	<p>DOWNTOWN BALTIMORE<br/>
+			    	<a href="#">Check out the USS Torsk at Baltimore’s historic Maritime Museum.</a></p>
+			    </span>
+			    <span class="slider">
+			    	<img id="img2" src="resources/img/2.JPG" />
+			    	<p>VENICE TOURS<br/>
+			    	<a href="#">Check out the tours and things to do when in Venice</a></p>
+			    </span>
+			    <span class="slider">
+			    	<img id="img3"  src="resources/img/3.JPG" />
+			    	<p>DOWNTOWN NEWYORK<br/>
+			    	<a href="#">Check out the downtown of Newyork at night</a></p>
+			    </span>
+			    <span class="slider">
+			    	<img id="img4"  src="resources/img/4.JPG" />
+			    	<p>MT. RUSHMORE<br/>
+			    	<a href="#">Check out this epic sculpture now!</a></p>
+			    </span>
 			</div>
 			<div id="sliderCaption">
-				<img class="active" src="resources/img/1-1.jpg">
-				<img src="resources/img/2-1.jpg">
-				<img src="resources/img/3-1.jpg">
-				<img src="resources/img/4-1.jpg">
+				<span class="actThumb">
+					<img class="thumb" src="resources/img/1-1.jpg">
+				</span>
+				<span>
+					<img class="thumb" src="resources/img/2-1.jpg">
+				</span>
+				<span>
+					<img class="thumb" src="resources/img/3-1.jpg">
+				</span>
+				<span>
+					<img class="thumb" src="resources/img/4-1.jpg">
+				</span>
 			</div>
 		</div>
 		<div class="container_aside">
-			<div>
-				<input class="search" type="text" placeholder="Search . . . . " />
-			</div>
 			<div class="tweet">
 				<a class="twitter-timeline" href="https://twitter.com/oskymoron" data-widget-id="519976664378253312" data-screen-name="oskymoron">Tweets by @oskymoron</a>
 			</div>

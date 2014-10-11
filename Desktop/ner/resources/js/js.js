@@ -18,10 +18,10 @@ function displaySlider(){
         }else {
             i++;
         }
-        $("#slideshow img.active").removeClass("active");
-        $("#sliderCaption img.active").removeClass("active");
-        $("#slideshow img:nth-child("+i+")").addClass("active");
-        $("#sliderCaption img:nth-child("+i+")").addClass("active");
+        $("#slideshow span.active").removeClass("active");
+        $("#sliderCaption .actThumb").removeClass("actThumb");
+        $("#slideshow span:nth-child("+i+")").addClass("active");
+        $("#sliderCaption span:nth-child("+i+")").addClass("actThumb");
 
     },2000);
 }
