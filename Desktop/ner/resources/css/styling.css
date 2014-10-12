@@ -1,6 +1,6 @@
 body{
     background: url(../img/cityscape.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: Helvetica;
     color: #fff;
@@ -179,21 +179,25 @@ span.active{
 .container1_main .categories{
     margin-top: 20px;
     width: 25%;
+    float:left;
 }
 .container1_main .articles{
     color: black;
     margin: 20px;
     padding: 0;
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     width: 65%;
 }
 .categories{
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     margin-left:20px;
     margin-bottom: 20px;
 }
 .categories_header{
-    width: 100%;
     color: #FFF;
     padding: 7px;
     margin-left: -34px;
@@ -225,7 +229,7 @@ span.active{
 }
 .categories ul li {
     list-style-type: none;
-    line-height: 18px;
+    line-height: 21px;
 }
 .categories ul li a{
     color: #282b2e;
@@ -244,29 +248,154 @@ span.active{
     background-position: 5px; 
 }
 
+.articles{
+    overflow: auto;
+}
 .articles ul{
     padding: 0px;
     margin: 0;
 }
 .articles ul li{
+    display: block;
     list-style-type: none;
+    clear: both;
 }
 .articles ul li img{
     width: 33%;
-    margin-top:8px;
+    float: left;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 .article_img{
     display: inline-block;
+    zoom: 1;
+    *display: inline;
 }
 
 .articles ul li p{
-    float: right;
     width: 65%;
-    margin: 8px 0px 0px;
+    float: right;
+    zoom: 1;
+    *display: inline;
+    margin-top: 8px;
+    margin-bottom: 5px;
 }
 .articles ul li p strong{
-    line-height: 18px;
+    line-height: 20px;
+}
+.subscription, .contests{
+    background-color: #EAEAEA;
+    color: #282b2e;
+    margin: 20px 20px 0px 0px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+form{
+    padding: 10px;
+}
+.formName{
+    color: #555;
+    font-weight: 700;
+    padding: 0px 7px;
+    margin-left: 15px;
+    color: #282b2e;
+    position:relative;  
+    background: #EAEAEA url(../img/envelope.png) left no-repeat;  
+    background-position: 2px; 
+}
+
+form input{
+    width: 95%;
+    border: 1px solid #AFAFAF;
+    padding: 5px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+form input[type='checkbox']{
+    margin-top: 5px;
+    width: auto;
+}
+.container1_aside hr{
+    width: auto;
+    margin: 5px;
+}
+label{
+    font-weight: 700;
+}
+.formContent{
+    padding:20px 0px 0px;
+    margin: 20px 0px 0px;
+}
+
+.formLinks{
+    clear: both;
+    text-align: center;
+}
+
+.formLinks a{
+    color: #282b2e;
+    text-decoration: none;
+}
+
+.formContent>*, .formLinks>*{
+    background-color: #D4D4D4;
+    padding: 8px;
+}
+form input[type='button']{
+    float: right;
+    color: white;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+    background-color: #1990DD;
 }
 .tweet{
     width: 274px;
+}
+.contestName{
+    color: #555;
+    font-weight: 700;
+    padding: 0px 7px;
+    margin-left: 15px;
+    color: #282b2e;
+    position:relative;  
+    background: #EAEAEA url(../img/contest.png) left no-repeat;  
+    background-position: 2px; 
+}
+
+.contests{
+    margin-bottom: 20px;
+    padding-left: 5px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.contests ul{
+    padding: 0px;
+}
+
+.contests ul li{
+    background-color: #EAEAEA;
+    padding-right: 5px;
+    display: inline-block;
+    zoom:1;
+    *display: inline;
+    clear: both;
+    list-style-type: none;
+}
+.contests ul li img{
+    float: left;
+    width: 33%;
+    zoom: 1;
+    *display: inline;
+}
+.contests ul li p{
+    line-height: 120%;
+    font-weight: 700;
+    width: 65%;
+    float: right;
+    zoom: 1;
+    *display: inline;
 }
