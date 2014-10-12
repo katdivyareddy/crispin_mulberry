@@ -1,10 +1,13 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background: url(../img/cityscape.png);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Helvetica;
     color: #fff;
-    margin: 10px;
     font-size: 14px;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='..img/cityscape.png',sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='..img/cityscape.png',sizingMethod='scale')";
@@ -109,18 +112,18 @@ div#sliderCaption{
     height: 71px;
 }
 
-#slideshow span img{
+#slideshow div img{
     height: 330px;
 }
 
-span.slider{
+div.slider{
     position: relative;
     bottom: 0;
     width: 660px;
     display: none;
 }
 
-span.slider p{
+div.slider p{
     width: 644px;
     margin: 0;
     left: 0;
@@ -134,7 +137,7 @@ span.slider p{
     font-weight: 700;
 }
 
-span.slider p a{
+.slider p a{
     color: #282b2e;
     text-decoration: none;
     font-family: Helvetica;
@@ -142,7 +145,7 @@ span.slider p a{
     font-weight: 400;
 }
 
-span.active{
+div.active{
     display: block;
     min-height: 20px;
     overflow: hidden;
@@ -178,7 +181,7 @@ span.active{
     margin: 0px
 }
 .container1_aside .ads img{
-    margin: 15px 0px;
+    margin: 12px 0px;
 }
 .container1_main .categories{
     margin-top: 20px;
@@ -415,6 +418,8 @@ form input[type='button']{
     margin-left: -35px;
     margin-right: 20px;
     line-height: 24px;
+    float: left;
+    width: 100%;
     background: #1990DD url(../img/video.png) left no-repeat;  
     background-position: 4px;    
 }
@@ -434,6 +439,7 @@ form input[type='button']{
     padding: 0;
 }
 .videos ul li{
+    clear: both;
     margin-top: 20px;
     margin-right: 10px;
     display: inline-block;
@@ -466,7 +472,33 @@ form input[type='button']{
     background: url(../img/videoText.png);
 }
 .navbar-btm{
+    font-size: 12px;
     clear: both;
     background-color: black;
-    height: 90px;
+    height: 66px;
+}
+
+.navbar-btm .navLinks{
+    color: #969696;
+    float: left;
+    margin: 15px;
+}
+.navbar-btm ul{
+    margin: 5px 0px;
+    padding: 0;
+}
+.navbar-btm ul li{ 
+    margin-right: 10px;
+    list-style-type: none;
+    display: inline-block;
+    zoom:1;
+    *display: inline;
+}
+.navLinks ul li a{
+    color: #Fff;
+    text-decoration: none;
+}
+.icons{
+    margin: 10px;
+    float: right;
 }

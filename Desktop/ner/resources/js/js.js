@@ -18,10 +18,10 @@ function displaySlider(){
         }else {
             i++;
         }
-        $("#slideshow span.active").removeClass("active");
+        $("#slideshow div.active").removeClass("active");
         $("#sliderCaption .actThumb").removeClass("actThumb");
-        $("#slideshow span:nth-child("+i+")").addClass("active");
+        $("#slideshow div:nth-child("+i+")").addClass("active");
         $("#sliderCaption span:nth-child("+i+")").addClass("actThumb");
 
-    },2000);
+    },5000);
 }
