@@ -13,23 +13,31 @@ body{
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='..img/cityscape.png',sizingMethod='scale')";
     background-color: #1682c7;
 }
-
 .header{
     margin: auto;
     width: 1000px;
     height: 100px;
 }
-
-.container1{
+.container1, .break{
+	clear: both;
     margin: auto;
     width: 1000px;
     background-color: #fff;
+    border: none;
 }
-
+.break { 
+	border-top: 1px solid black; 
+}
+.break hr {
+	display: none; 
+}
 .container1 .navbar{
     width: 1000px;
 }
-
+ul li{
+    clear: both;
+    list-style-type: none;
+}
 .navbar ul{
     padding: 0px;
     margin: 0px;
@@ -38,7 +46,7 @@ body{
 }
 .navbar ul li{
     width: 16.2%;
-    padding: 10px 0px;
+    line-height: 3em;
     text-align: center;
     display: inline-block;
     zoom: 1;
@@ -52,11 +60,9 @@ body{
     text-decoration: none;
     color: rgba(40, 43, 46, 0.8);
 }
-
 .navbar ul li:hover{
     background: #D3D3D3;
 }
-
 .navbar ul li.active{
     background: #FFF;
     margin-top: -10px;
@@ -64,66 +70,51 @@ body{
     border: 2px solid grey;
     border-bottom: 2px solid #FFF;
 }
-
 .container1_main, .logo{
-    border: 5px;
     float: left;
     width: 70%;
 }
-
 .container1_aside, .search-top{
     float: right;
     width: 30%;
 }
-
 .container1_main, .container1_aside{
-    padding-top: 10px;
+    padding: 1.3em 0;
     background: white;
 }
-
 div#slideshow{
-    width: 666px; /*cannot write media queries here no support for IE8*/
-    height: 330px;
-    margin: 10px 20px;
+    margin: 0px 20px;
 }
-
 div#sliderCaption{
-    margin: 0px 20px 5px;
+    margin: 0px 20px;
     display: inline-block;
     zoom: 1;
     *display: inline;
-    width: 666px; /*cannot write media queries here no support for IE8*/
+    width: 666px;
 }
-
 #sliderCaption span{
     margin-right: 6px;
 }
-
 #sliderCaption span:first-child+span+span+span {
     margin-right: 0px;
 }
-
 #sliderCaption span img{
     max-height: 79px;
     max-width: 159px;
 }
-
 #sliderCaption .actThumb img{
     width: 151px;
     height: 71px;
 }
-
 #slideshow div img{
     height: 330px;
 }
-
 div.slider{
     position: relative;
     bottom: 0;
     width: 660px;
     display: none;
 }
-
 div.slider p{
     width: 644px;
     margin: 0;
@@ -137,7 +128,6 @@ div.slider p{
     font-size: 24px;
     font-weight: 700;
 }
-
 .slider p a{
     color: #282b2e;
     text-decoration: none;
@@ -145,13 +135,11 @@ div.slider p{
     font-size: 14px;
     font-weight: 400;
 }
-
 div.active{
     display: block;
     min-height: 20px;
     overflow: hidden;
 }
-
 .actThumb .thumb{
     margin-top: 10px;
     border: 4px solid #1990DD;
@@ -165,7 +153,6 @@ div.active{
     background: url(../img/arrow.png) no-repeat;
     width: 12px;
 }
-
 .search{
     width: 274px;
     position:relative;  
@@ -181,8 +168,8 @@ div.active{
 .container1_aside .ads{
     margin: 0px
 }
-.container1_aside .ads img{
-    margin: 12px 0px;
+.container1_aside .ads img:first-child{
+    margin-bottom: 1.36em;
 }
 .container1_main .categories{
     margin-top: 20px;
@@ -236,7 +223,6 @@ div.active{
     padding: 0;
 }
 .categories ul li {
-    list-style-type: none;
     line-height: 21px;
 }
 .categories ul li a{
@@ -255,7 +241,6 @@ div.active{
     background: #1990DD url(../img/articles.png) left no-repeat;  
     background-position: 5px; 
 }
-
 .articles{
     overflow: auto;
 }
@@ -265,8 +250,6 @@ div.active{
 }
 .articles ul li{
     display: block;
-    list-style-type: none;
-    clear: both;
 }
 .articles ul li img{
     width: 33%;
@@ -279,7 +262,6 @@ div.active{
     zoom: 1;
     *display: inline;
 }
-
 .articles ul li p{
     width: 65%;
     float: right;
@@ -301,7 +283,6 @@ div.active{
 .subscription{
     height: 38%;
 }
-
 form{
     padding: 10px;
 }
@@ -314,7 +295,6 @@ form{
     background: #EAEAEA url(../img/envelope.png) left no-repeat;  
     border-bottom: 1px solid #333;
 }
-
 form .email{
     margin-top: 10px;
     width: 95%;
@@ -323,12 +303,10 @@ form .email{
     float: left;
     margin-bottom: 5px;
 }
-
 form input[type='checkbox']{
     margin-top: 5px;
     width: auto;
 }
-
 label{
     font-weight: 700;
 }
@@ -336,17 +314,14 @@ label{
     padding:20px 0px 0px;
     margin: 20px 0px 0px;
 }
-
 .formLinks{
     clear: both;
     text-align: center;
 }
-
 .formLinks a{
     color: #282b2e;
     text-decoration: none;
 }
-
 .formContent>*, .formLinks>*{
     background-color: #D4D4D4;
     padding: 8px;
@@ -372,7 +347,6 @@ form input[type='button']{
     background: #EAEAEA url(../img/contest.png) left no-repeat;  
     border-bottom: 1px solid #333;
 }
-
 .contests{
     margin-bottom: 20px;
     padding-left: 10px;
@@ -391,8 +365,6 @@ form input[type='button']{
     display: inline-block;
     zoom:1;
     *display: inline;
-    clear: both;
-    list-style-type: none;
 }
 .contests ul li img{
     float: left;
@@ -408,7 +380,6 @@ form input[type='button']{
     zoom: 1;
     *display: inline;
 }
-
 .videos{
     background-color: #FFF;
     margin: 20px 0px 20px 20px;
@@ -440,7 +411,6 @@ form input[type='button']{
     padding: 0;
 }
 .videos ul li{
-    clear: both;
     margin-top: 20px;
     margin-right: 10px;
     display: inline-block;
@@ -459,7 +429,6 @@ form input[type='button']{
     text-decoration: none;
     border: 0;
 }
-
 .videos ul li .play{
     position: absolute;
     left: 40%;
@@ -494,7 +463,6 @@ form input[type='button']{
 }
 .navbar-btm ul li{ 
     margin-right: 10px;
-    list-style-type: none;
     display: inline-block;
     zoom:1;
     *display: inline;
