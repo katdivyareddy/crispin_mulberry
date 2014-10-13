@@ -11,6 +11,7 @@ body{
     font-size: 14px;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='..img/cityscape.png',sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='..img/cityscape.png',sizingMethod='scale')";
+    background-color: #1682c7;
 }
 
 .header{
@@ -453,6 +454,10 @@ form input[type='button']{
 
 .videos ul li a{
     text-decoration: none;
+}
+.videos ul li a img{
+    text-decoration: none;
+    border: 0;
 }
 
 .videos ul li .play{
