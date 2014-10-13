@@ -1,6 +1,10 @@
-Working URL: http://libertyville.rice.iit.edu/dkatpall/NAT/
+Working URL: http://libertyville.rice.iit.edu/dkatpall/NAT/.
+
 GIT Repository Location: https://github.com/katdivyareddy/crispin_mulberry.git
+
 Fulfilled Requirements:
+
+
 1.	Browser Support: Supports all major browsers, IE 7, 8, 9+. Tested support in IE9 on a windows vista machine by changing browser modes.
 2.	Build Tools: None used.
 3.	Framework: jQuery 1.11.1. No plugins/polyfills.
